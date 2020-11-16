@@ -1,0 +1,106 @@
+body {
+  font-family: "Varela Round", sans-serif;
+}
+
+form {
+  margin: 10px;
+}
+input {
+  border: 0;
+  outline: none;
+  border-radius: 4px;
+  box-shadow: rgba(43, 44, 46, 0.6) 3px 7px 7px 0;
+  line-height: 2.1;
+}
+
+h2,
+h3 {
+  color: #1d1a25;
+}
+h1 {
+  color: #1d1a25;
+  font-size: 45px;
+  margin: 30px 0px -100px 30px;
+}
+h2 {
+  margin: 0 0 -100px;
+}
+h3 {
+  font-size: 24px;
+  display: block;
+  margin-left: 280px;
+}
+
+span.current-time {
+  font-size: small;
+  display: block;
+  color: #496c8a;
+  margin-left: 60px;
+}
+span.current-temperature {
+  margin-left: 120px;
+  display: block;
+  position: relative;
+  top: -50px;
+  font-size: 40px;
+}
+.city {
+  letter-spacing: 3px;
+}
+
+.main-icon {
+  display: block;
+  width: 150px;
+  position: relative;
+  left: 180px;
+  top: -200px;
+}
+.today {
+  font-size: small;
+}
+.max-min {
+  font-size: 12px;
+  margin-top: 10px;
+  margin-left: 50px;
+  color: #000;
+}
+
+.hour {
+  font-size: 16px;
+}
+
+.day {
+  margin-left: 50px;
+}
+
+.search {
+  padding: 10px 0px 0px 300px;
+}
+.btn {
+  border-radius: 4px;
+  box-shadow: rgba(37, 39, 89, 0.6) 3px 7px 7px 0;
+}
+.row {
+  font-size: 16px;
+  padding: 20px;
+  margin: 50px 0 0 40px;
+  border-radius: 8px;
+  width: 85%;
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+.container {
+  border: 1px solid;
+  margin: 30px 300px;
+  max-width: 600px;
+  border-radius: 8px;
+  background-image: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%);
+}
+
+.units {
+  font-size: 25px;
+  position: relative;
+  bottom: 60px;
+  left: 90px;
+  cursor: pointer;
+}
