@@ -83,9 +83,9 @@ span.current-temperature {
 .row {
   font-size: 16px;
   padding: 20px;
-  margin: 50px 0 0 40px;
+  margin: 50px 0 0 15px;
   border-radius: 8px;
-  width: 85%;
+  width: 95%;
   background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
 
@@ -103,4 +103,10 @@ span.current-temperature {
   bottom: 60px;
   left: 90px;
   cursor: pointer;
+}
+
+.coded-by {
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
 }
