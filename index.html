@@ -7,14 +7,15 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <title>Parcel Sandbox</title>
+    <title>AppWeather</title>
     <meta charset="UTF-8" />
-  <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="src/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> </head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
   <body>
     <div class="container">
       <form id="search-form">
@@ -28,20 +29,17 @@
 
         <button type="submit" class="btn btn-dark">Search</button>
       </form>
- 
 
-      <button type="submit" id="current-button" class="btn btn-info" >
-           Current location 
+      <button type="submit" id="current-button" class="btn btn-info">
+        Current location
       </button>
-      
+
       <h1>
-        <span class="city" id="city">  Florence </span>
+        <span class="city" id="city"> Florence </span>
         <span class="current-time" id="current-time"> Now 12.30pm </span>
 
         <br />
-        <div class="current-temperature" id="current-temperature">
-          +12
-        </div>
+        <div class="current-temperature" id="current-temperature">+12</div>
         <span class="units">
           <a href="#" id="celsius">°C </a>
           |
@@ -78,35 +76,45 @@
           <span id="humidity">97</span>%
         </small>
       </h3>
-     
-          <h4>
-              <div class="row">
-                  <div class="col-2"><p class="card-text">Fri</p>
-                    <img src="images/storm.png" width="40px" />
-                    <p class="card-text">+15°C</p></div>
-                  <div class="col-2"> <p class="card-text">Sat</p>
-                    <img src="images/storm.png" width="40px" />
-                    <p class="card-text">+15°C</p></div>
-                  <div class="col-2">  <p class="card-text">Sun</p>
-                    <img src="images/sun.png" width="40px" />
-                    <p class="card-text">+17°C</p></div>
-                  <div class="col-2">   <p class="card-text">Mon</p>
-                    <img src="images/sun_cloud.png" width="40px" />
-                    <p class="card-text">+16°C</p></div>
-                 <div class="col-2"> <p class="card-text">Tue</p>
-                    <img src="images/showers.png" width="40px" />
-                    <p class="card-text">+13°C</p></div>
-                    <div class="col-2"> <p class="card-text">Tue</p>
-                      <img src="images/showers.png" width="40px" />
-                      <p class="card-text">+13°C</p></div>
-               
-                </div>
-    
-             
-            </div>
-          </h4>
 
-      
+      <div class="row">
+        <div class="col-2">
+          <p class="card-text">Fri</p>
+          <img src="images/storm.png" width="40px" />
+          <p class="card-text">+15°C</p>
+        </div>
+        <div class="col-2">
+          <p class="card-text">Sat</p>
+          <img src="images/storm.png" width="40px" />
+          <p class="card-text">+15°C</p>
+        </div>
+        <div class="col-2">
+          <p class="card-text">Sun</p>
+          <img src="images/sun.png" width="40px" />
+          <p class="card-text">+17°C</p>
+        </div>
+        <div class="col-2">
+          <p class="card-text">Mon</p>
+          <img src="images/sun_cloud.png" width="40px" />
+          <p class="card-text">+16°C</p>
+        </div>
+        <div class="col-2">
+          <p class="card-text">Tue</p>
+          <img src="images/showers.png" width="40px" />
+          <p class="card-text">+13°C</p>
+        </div>
+        <div class="col-2">
+          <p class="card-text">Tue</p>
+          <img src="images/showers.png" width="40px" />
+          <p class="card-text">+13°C</p>
+        </div>
+      </div>
+      <p class="coded-by">
+        <a href="https://github.com/MeStessa/AppWeather/" target="_blank">
+          Open-source code</a
+        >
+        by Marina Mukhina
+      </p>
     </div>
 
     <script src="src/index.js"></script>
