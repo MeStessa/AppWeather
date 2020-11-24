@@ -38,12 +38,15 @@ h3 {
   display: block;
   margin-left: 280px;
 }
+#description {
+  text-transform: capitalize;
+}
 
 span.current-time {
   font-size: small;
   display: block;
   color: #496c8a;
-  margin-left: 60px;
+  margin-left: 10px;
 }
 span.current-temperature {
   margin-left: 120px;
