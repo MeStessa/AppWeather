@@ -42,29 +42,40 @@ h3 {
   text-transform: capitalize;
 }
 
+#current-button {
+  margin: auto;
+}
+
+#current-temperature {
+  font-size: 100px;
+  margin: 0px 0px 30px 120px;
+}
+.active {
+  color: black;
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
+  color: #000;
+}
+
 span.current-time {
   font-size: small;
   display: block;
-  color: #496c8a;
+  color: #000;
   margin-left: 10px;
 }
-span.current-temperature {
-  margin-left: 120px;
-  display: block;
-  position: relative;
-  top: -50px;
-  font-size: 40px;
-}
+
 .city {
-  letter-spacing: 3px;
+  text-align: center;
 }
 
 .main-icon {
   display: block;
   width: 150px;
   position: relative;
-  left: 180px;
-  top: -200px;
+  left: 220px;
+  top: -55px;
 }
 .today {
   font-size: small;
@@ -91,21 +102,21 @@ span.current-temperature {
   border-radius: 4px;
   box-shadow: rgba(37, 39, 89, 0.6) 3px 7px 7px 0;
 }
-.row {
+.forecast {
   font-size: 16px;
   padding: 20px;
-  margin: 50px 0 0 15px;
+  margin: 50px 0 20px 15px;
   border-radius: 8px;
   width: 95%;
   background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
 
 .units {
-  font-size: 25px;
+  font-size: 45px;
   position: relative;
-  bottom: 60px;
-  left: 90px;
-  cursor: pointer;
+  bottom: 105px;
+  left: 200px;
+  margin-left: 50px;
 }
 
 .coded-by {

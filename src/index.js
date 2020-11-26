@@ -25,17 +25,23 @@ today.innerHTML = `${day}`;
 
 function checkCelsius(event) {
   event.preventDefault();
-  let tempCelsius = document.querySelector("#current-temperature");
-  tempCelsius.innerHTML = `+19`;
+  let temperatureCelsius = document.querySelector("#current-temperature");
+  temperatureCelsius.innerHTML=tempCelsius;
+  fahr.classList.remove("active");
+   celsius.classList.add("active");
 }
 let celsius = document.querySelector("#celsius");
 celsius.addEventListener("click", checkCelsius);
+
+let tempCelsius= null;
 
 function checkFahr(event) {
   event.preventDefault();
 
   let tempFahrenheit = document.querySelector("#current-temperature");
-  tempFahrenheit.innerHTML = `  66`;
+  tempFahrenheit.innerHTML = Math.round((tempCelsius * 9) / 5 + 32);
+  celsius.classList.remove("active");
+  fahr.classList.add("active");
 }
 let fahr = document.querySelector("#fahr");
 fahr.addEventListener("click", checkFahr);
@@ -67,6 +73,10 @@ function showDetails(response) {
     response.data.wind.speed
   );  
   document.querySelector("#main-icon").setAttribute("src" , `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  tempCelsius = Math.round(
+    response.data.main.temp
+  );
+
 }
 
 
@@ -82,6 +92,8 @@ function cityDefine(event) {
   let city = document.querySelector("#search-input").value;
   searchCity(city);
 }
+
+searchCity("San Francisco");
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", cityDefine);
@@ -101,3 +113,5 @@ function getPosition(position) {
 }
 let currentButton = document.querySelector("#current-button");
 currentButton.addEventListener("click", showPosition);
+
+
