@@ -63,9 +63,18 @@ span.current-time {
   font-size: small;
   display: block;
   color: #000;
-  margin-left: 10px;
+  margin: auto;
+  text-align: center;
+  padding: 5px;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius: 5px;
 }
-
+.col-2 {
+  text-align: center;
+}
+p.details {
+  margin: 0;
+}
 .city {
   text-align: center;
 }
@@ -94,13 +103,12 @@ span.current-time {
 .day {
   margin-left: 50px;
 }
-
-.search {
-  padding: 10px 0px 0px 300px;
+#search-input {
+  box-shadow: rgba(91, 92, 104, 0.6) 2px 3px 2px 0;
 }
 .btn {
   border-radius: 4px;
-  box-shadow: rgba(37, 39, 89, 0.6) 3px 7px 7px 0;
+  box-shadow: rgba(91, 92, 104, 0.6) 2px 3px 2px 0;
 }
 .forecast {
   font-size: 16px;
@@ -108,7 +116,7 @@ span.current-time {
   margin: 50px 0 20px 15px;
   border-radius: 8px;
   width: 95%;
-  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  background-image: linear-gradient(-225deg, #cbbacc 0%, #2580b3 100%);
 }
 
 .units {
