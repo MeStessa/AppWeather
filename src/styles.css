@@ -80,7 +80,7 @@ span.current-time {
   font-size: small;
 }
 .max-min {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 10px;
   margin-left: 50px;
 }
@@ -96,7 +96,7 @@ span.current-time {
   box-shadow: rgba(91, 92, 104, 0.6) 2px 3px 2px 0;
 }
 .forecast {
-  font-size: 16px;
+  font-size: 18px;
   padding: 20px;
   margin: 50px 0 20px 15px;
   border-radius: 8px;
