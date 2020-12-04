@@ -42,6 +42,9 @@ h3 {
   font-size: 100px;
   margin: 0px 0px 30px 120px;
 }
+#search-input {
+  box-shadow: rgba(91, 92, 104, 0.6) 2px 3px 2px 0;
+}
 .active {
   color: black;
   cursor: default;
@@ -51,7 +54,7 @@ h3 {
   color: #000;
 }
 
-span.current-time {
+.current-time {
   font-size: small;
   display: block;
   margin: auto;
@@ -71,9 +74,9 @@ span.current-time {
 
 .main-icon {
   display: block;
-  width: 150px;
+  width: 170px;
   position: relative;
-  left: 220px;
+  left: 250px;
   top: -55px;
 }
 .today {
@@ -88,9 +91,7 @@ span.current-time {
 .day {
   margin-left: 50px;
 }
-#search-input {
-  box-shadow: rgba(91, 92, 104, 0.6) 2px 3px 2px 0;
-}
+
 .btn {
   border-radius: 4px;
   box-shadow: rgba(91, 92, 104, 0.6) 2px 3px 2px 0;

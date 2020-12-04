@@ -61,14 +61,12 @@ let fahr = document.querySelector("#fahr");
 fahr.addEventListener("click", checkFahr);
 
 
-
 function showDetails(response) {
   
   document.querySelector("#city").innerHTML = response.data.name + `, ` + response.data.sys.country;
   document.querySelector("#current-temperature").innerHTML = Math.round(
     response.data.main.temp
   );
-
   document.querySelector("#max").innerHTML = Math.round(
     response.data.main.temp_max
   );
@@ -77,7 +75,6 @@ function showDetails(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
-
 
   document.querySelector("#percieved").innerHTML = Math.round(
     response.data.main.feels_like
@@ -90,9 +87,7 @@ function showDetails(response) {
   tempCelsius = Math.round(
     response.data.main.temp
   );
-
 }
-
 
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
@@ -106,12 +101,8 @@ function displayForecast(response) {
             <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" width="50px" />
             <p class="details"> ${Math.round(forecast.main.temp_max)}° </br>  ${Math.round(forecast.main.temp_min)}°</p>
           </div>`;
-
 }
 }
-
-
-
 function searchCity(city) {
   let apiKey = "2abf5cd5bdf12c255e9d60ca40791365";
 
@@ -120,7 +111,6 @@ function searchCity(city) {
 
   let apiLink= `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiLink).then(displayForecast);
-
 }
 
 function cityDefine(event) {
