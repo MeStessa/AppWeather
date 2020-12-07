@@ -1,11 +1,3 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
-
 .container {
   border: 1px solid;
   margin: 0 auto;
@@ -14,8 +6,6 @@ body {
   font-family: "Varela Round", sans-serif;
   color: #1d1a25;
   background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-  background-size: cover;
-  background-position: top;
 }
 
 form {
